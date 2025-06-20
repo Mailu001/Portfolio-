@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Modern Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="section hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hello, I'm <span class="highlight">EMMANUEL MALIU PETER</span></h1>
+            <p>IT Specialist / Officer | Systems Administration | Network Management | Cybersecurity</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Highly skilled IT professional with over three years of experience in systems administration, network management, cybersecurity, and end-user support. Proven ability to design, implement, and maintain IT solutions that support organizational goals and operational efficiency. Seeking to contribute my technical skills and strategic thinking to a progressive organization as an IT Specialist/Officer.</p>
+    </section>
+    <section id="employment" class="section employment">
+        <h2>Employment Status</h2>
+        <div class="employment-status">
+    <img src="kengen-logo.png" alt="KenGen Logo" class="company-logo">
+    <p>Currently employed as an <strong>IT Specialist / Officer</strong> at 
+        <a href="https://kengen.co.ke" target="_blank" rel="noopener" style="color:#0078ff; font-weight:600; text-decoration:underline;">Kenya Electricity Generating Company (KenGen)</a>.
+    </p>
+</div>
+    </section>
+    <section id="projects" class="section projects">
+        <h2>Key Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Network Upgrade Project</h3>
+                <p>Redesigned and deployed a secure network across multiple branches, improving connectivity and security.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cloud Migration</h3>
+                <p>Led transition from on-premise to cloud-based storage solutions, ensuring seamless data migration and minimal downtime.</p>
+            </div>
+            <div class="project-card">
+                <h3>IT Policy Development</h3>
+                <p>Created and implemented comprehensive IT usage and security policies to ensure compliance and best practices.</p>
+            </div>
+            <div class="project-card">
+                <h3>Disaster Recovery Implementation</h3>
+                <p>Designed and tested robust backup and disaster recovery strategies for business continuity.</p>
+            </div>
+            <div class="project-card">
+                <h3>Active Directory Deployment</h3>
+                <p>Set up and managed Active Directory for user authentication and resource management across the organization.</p>
+            </div>
+            <div class="project-card">
+                <h3>Firewall & Security Rollout</h3>
+                <p>Configured and maintained enterprise firewalls and antivirus solutions, reducing security incidents by 40%.</p>
+            </div>
+            <div class="project-card">
+                <h3>IT Helpdesk Optimization</h3>
+                <p>Streamlined helpdesk operations, reducing ticket resolution time by 30% through process automation and staff training.</p>
+            </div>
+            <div class="project-card">
+                <h3>LAN/WAN Configuration</h3>
+                <p>Implemented and troubleshooted LAN/WAN networks, ensuring reliable connectivity for all departments.</p>
+            </div>
+            <div class="project-card">
+                <h3>Digital Transformation Initiative</h3>
+                <p>Led the digital transformation project, introducing new technologies and automating legacy systems.</p>
+            </div>
+            <div class="project-card">
+                <h3>SQL Server Optimization</h3>
+                <p>Optimized SQL Server databases for better performance, reliability, and security.</p>
+            </div>
+            <div class="project-card">
+                <h3>End-User Training Program</h3>
+                <p>Developed and delivered IT training sessions to staff, increasing digital literacy and security awareness.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>Network Administration (Cisco)</li>
+            <li>Windows Server</li>
+            <li>Linux</li>
+            <li>Active Directory</li>
+            <li>Database Management (SQL Server, MySQL)</li>
+            <li>IT Support (Helpdesk, Troubleshooting, User Training)</li>
+            <li>Cybersecurity (Firewalls, Antivirus, Backup Solutions)</li>
+            <li>Programming (C++, JavaScript)</li>
+        </ul>
+        <h3>Languages</h3>
+        <ul class="skills-list">
+            <li>English (Fluent)</li>
+            <li>Kiswahili (Fluent)</li>
+        </ul>
+    </section>
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <div class="contact-details">
+            <p><strong>Address:</strong> P.O Box 666</p>
+            <p><strong>Phone:</strong> 0710292483</p>
+            <p><strong>Email:</strong> <a href="mailto:mailuhemmanu@gmail.com">mailuhemmanu@gmail.com</a></p>
+            <p><strong>Nationality:</strong> Kenyan</p>
+        </div>
+        <?php include 'contact.php'; ?>
+        <form id="contact-form" method="POST" action="contact.php">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <section id="references" class="section references">
+        <h2>Professional References</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="carousel-track">
+                <div class="carousel-item active">
+                    <h3>Amos Juma</h3>
+                    <p><strong>Company:</strong> Kenya Police Headquarters</p>
+                    <p><strong>Phone:</strong> 0723 137 462</p>
+                    <p><strong>Email:</strong> <a href="mailto:amos.juma@kenyapolice.go.ke">amos.juma@kenyapolice.go.ke</a></p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Michael Kambo</h3>
+                    <p><strong>Company:</strong> KENGEN</p>
+                    <p><strong>Phone:</strong> 0700248256</p>
+                    <p><strong>Email:</strong> <a href="mailto:nmkambo@kengen.co.ke">nmkambo@kengen.co.ke</a></p>
+                </div>
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+    <footer>
+    <div class="footer-social">
+        <a href="https://wa.me/254710292483" target="_blank" class="social-icon" title="WhatsApp" rel="noopener">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M23.3 19.7c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.5-1.7-1.7-2-.2-.3 0-.5.1-.6.1-.1.2-.3.3-.4.1-.1.1-.2.2-.3.1-.1.1-.2.2-.3.1-.2.1-.3 0-.5-.1-.1-.7-1.7-.9-2.3-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.5.1-.7.3-.2.2-.9.8-.9 2 0 1.1.7 2.2 1.1 2.8 1.2 1.7 2.8 2.8 4.5 3.2.4.1.8.1 1.1.1.5 0 1.1-.1 1.3-.4.2-.2.5-.6.6-.8.2-.3.2-.5.2-.7 0-.1 0-.2-.1-.2z" fill="#fff"/></svg>
+        </a>
+        <a href="https://facebook.com/" target="_blank" class="social-icon" title="Facebook" rel="noopener">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#1877F3"/><path d="M21 16.1h-2v7h-3v-7h-1.5v-2.6H16v-1.7c0-2 .6-3.1 2.6-3.1h2V12h-1.2c-.7 0-.8.3-.8.8v1.7h2l-.3 2.6z" fill="#fff"/></svg>
+        </a>
+    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
